@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.event-details {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-details h2 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.event-details p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.ticket-selection {
+    margin: 20px 0;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    padding: 5px;
+    width: 60px;
+}
+
+.total-cost {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #555;
+}

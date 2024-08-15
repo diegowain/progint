@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Evento</title>
+    <link rel="stylesheet" href="./css/detalhes.css">
+    <script src="detalhes.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Detalhes do Evento</h1>
+    </header>
+
+    <main>
+        <div class="event-details">
+            <h2>Grêmio vs Internacional</h2>
+            <p><strong>Descrição:</strong> Um clássico sempre repleto de emoção e surpresa, um prato cheio para torcedores
+            e amantes do futebol. Dessa vez na Arena do Grêmio. Vai pegar fogo.</p>
+            <p><strong>Data:</strong> 30 de agosto de 2024</p>
+            <p><strong>Horário:</strong> 16:00</p>
+            <p><strong>Local:</strong> Arena do Grêmio</p>
+            <p><strong>Preço:</strong> R$ <span id="ticket-price">200,00</span></p>
+            <p><strong>Ingressos Disponíveis:</strong> <span id="tickets-available">50.000</span></p>
+
+            <div class="ticket-selection">
+                <label for="ticket-quantity">Quantidade de Ingressos:</label>
+                <input type="number" id="ticket-quantity" name="ticket-quantity" value="1" min="1" max="50000">
+            </div>
+
+            <div class="total-cost">
+                <p><strong>Valor Total:</strong> R$ <span id="total-cost">200,00</span></p>
+            </div>
+
+            <button>Comprar Ingressos</button>
+        </div>
+    </main>
+
+   
+</body>
+</html>

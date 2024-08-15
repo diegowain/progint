@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/diegowain/progint/issues"
   },
-  "homepage": "https://github.com/diegowain/progint#readme"
+  "homepage": "https://github.com/diegowain/progint#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
 }
