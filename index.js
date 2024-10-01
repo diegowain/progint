@@ -4,7 +4,7 @@ import { verificarAutenticacao, sair } from './seguranca/autenticar.js';
 import session from 'express-session';
 
 const host = '0.0.0.0';
-const porta = 3004;
+const porta = 3000;
 const app = express();
 
 app.use(express.urlencoded({extended: true}));
