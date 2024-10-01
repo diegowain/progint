@@ -1,4 +1,3 @@
-const e = require("express");
 
 const formEvento = document.getElementById('formEvento');
 
@@ -16,7 +15,7 @@ function gravarEvento(){
         horario: document.getElementById('horario').value,
         local: document.getElementById('local').value,
         valor: document.getElementById('valor').value,
-        capacidade: document.getElementById('capacidade').value
+        ingresso: document.getElementById('ingresso').value
     }
 
     fetch(enderecoAPI, {
@@ -40,14 +39,14 @@ function gravarEvento(){
 
 }
 
-function selecionarEvento(titulo, descricao, data, horario, local, valor, capacidade) {
+function selecionarEvento(titulo, descricao, data, horario, local, valor, ingresso, motivo) {
     document.getElementById('titulo').value = titulo;
     document.getElementById('descricao').value = descricao;
     document.getElementById('data').value = data;
     document.getElementById('horario').value = horario;
     document.getElementById('local').value = local;
     document.getElementById('valor').value = valor;
-    document.getElementById('capacidade').value = capacidade;
+    document.getElementById('ingresso').value = ingresso;
 
 
     motivoAcao = motivo;
@@ -93,7 +92,7 @@ function atualizarEvento(){
         horario: document.getElementById('horario').value,
         local: document.getElementById('local').value,
         valor: document.getElementById('valor').value,
-        capacidade: document.getElementById('capacidade').value
+        ingresso: document.getElementById('ingresso').value
     }
 
 
@@ -144,14 +143,14 @@ function validarCampos(evento){
     const horario  = document.getElementById('horario').value;
     const local    = document.getElementById('local').value;
     const valor    = document.getElementById('valor').value;
-    const capacidade = document.getElementById('capacidade').value;
+    const ingresso = document.getElementById('ingresso').value;
 
 
     //impedem que o navegador continue o processo de submissão do formulário
     evento.stopPropagation();
     evento.preventDefault();
 
-    if (titulo && descricao && data && horario && local && valor && capacidade) {
+    if (titulo && descricao && data && horario && local && valor && ingresso) {
         if (motivoAcao == "CADASTRAR"){
             gravarEvento();
         }
@@ -164,7 +163,7 @@ function validarCampos(evento){
             motivoAcao = "CADASTRAR";
         }
         
-        formCliente.reset();
+        formEvento.reset();
         buscarTodosEventos();
         return true;
     }
@@ -212,10 +211,10 @@ function exibirTabelaEventos(listaEventos){
                 <td>${evento.horario}</td>
                 <td>${evento.local}</td>
                 <td>${evento.valor}</td>
-                <td>${evento.capacidade}</td>
+                <td>${evento.ingresso}</td>
                 <td>
-                    <button onclick="selecionarCliente('${evento.titulo}','${evento.descricao}','${evento.data}','${evento.horario}','${evento.local}','${evento.valor}','${evento.capacidade}','EDITAR')">Alterar</button>
-                    <button onclick="selecionarCliente('${evento.titulo}','${evento.descricao}','${evento.data}','${evento.horario}','${evento.local}','${evento.valor}','${evento.capacidade}','EXCLUIR')">Excluir</button>
+                    <button onclick="selecionarCliente('${evento.titulo}','${evento.descricao}','${evento.data}','${evento.horario}','${evento.local}','${evento.valor}','${evento.ingresso}','EDITAR')">Alterar</button>
+                    <button onclick="selecionarCliente('${evento.titulo}','${evento.descricao}','${evento.data}','${evento.horario}','${evento.local}','${evento.valor}','${evento.ingresso}','EXCLUIR')">Excluir</button>
                 </td>
             `;
             corpo.appendChild(linha);

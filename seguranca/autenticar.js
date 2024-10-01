@@ -4,7 +4,7 @@ export default function autenticar(requisicao, resposta){
     if (usuario == 'admin' && senha == 'admin') {
         requisicao.session.autenticado = true;
         //usuario está autenticado
-        resposta.redirect("/eventos.html");
+        resposta.redirect("/menu.html");
     }
     else
     {
