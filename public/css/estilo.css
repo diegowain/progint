@@ -2,92 +2,6 @@
     width: 100vw;
     height: 100vh;
     background: #6C7A89;;
-
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-input{
-    outline: 0;
-    background: #e2e2e2;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-.box{
-    width: 300px;
-    height: 300px;
-    background: whitesmoke;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 5px 5px 5px 5px #333;
-   
-}
-.box button {
-    font-family: sans-serif;
-    outline: 0;
-    background: #333;
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: white;
-    font-size: 14px;
-    transition: all 0.3 ease;
-    cursor: pointer;
-  }
-  .box button:hover,.box button:active,.box button:focus {
-    background: #544f5f;
-  }
-
-.box button[type=button]{
-    background: #e2e2e2;
-}
-
-.box button[type=button]:hover{
-    background: darkgrey;
-}
-.barraMenu{
-    height: 5vh;
-    width: 100vw;
-    background-color: rgb(48, 48, 48);
-    display: flex;
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
-}
-
-body {
-    margin: 0px;
-    box-sizing: border-box;
-}
-
-ul, li, a {
-    display: inline;
-    text-decoration: none;
-    list-style: none;
-    font-size: 18px;
-    color: whitesmoke;
-    margin-right: 20px;
-    transition: all 1.0s ease-in-out;
-}
-
-ul, li, a:hover {
-    color:#22ee2d;
-}
-
-
-
-
-
-.containerPessoal{
-    width: 100vw;
-    height: 100vh;
-    background: #6C7A89;;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -115,7 +29,7 @@ input{
 .box button {
     font-family: sans-serif;
     outline: 0;
-    background:(48, 48, 48);
+    background: #636166;
     width: 100%;
     border: 0;
     padding: 15px;
@@ -125,7 +39,7 @@ input{
     cursor: pointer;
   }
   .box button:hover,.box button:active,.box button:focus {
-    background: #0a090e;
+    background: #000000;
   }
 
 .box button[type=button]{
@@ -163,3 +77,4 @@ ul, li, a {
 ul, li, a:hover {
     color:#22ee2d;
 }
+

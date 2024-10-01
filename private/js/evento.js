@@ -185,7 +185,7 @@ function exibirMensagem(mensagem, cor = 'black') {
 
 function exibirTabelaEventos(listaEventos){
     if (listaEventos.length > 0) {
-        const espacoTabela = document.getElementById('containerTabela');
+        const espacoTabela = document.getElementById('Tabela');
         const tabela = document.createElement('table');
         tabela.classList="table table-striped table-hover";
         const cabecalho = document.createElement('thead');
